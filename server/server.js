@@ -16,6 +16,6 @@ app.use('/api',router);
 
 ConnectionDB().then(()=>{
     app.listen(PORT,()=>{
-        console.log(`Server is working at post ${PORT}`);
+        console.log(`Server is working at port ${PORT}`);
     })
 })
