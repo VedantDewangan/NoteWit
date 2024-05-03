@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.Login-Signup-Form{
+    width: 50vw;
+    margin: auto;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Login-Signup-Form input{
+    margin: 10px 0px;
+}
+
+.Login-Signup-Form p{
+    margin: 10px 0px;
+}
+
+.Login-Signup-Form a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+.LeftNavBar{
+    width: 8vw;
+    height: 100vh;
+    background-color: rgba(230, 230, 230, 0.5);
+    padding: 15px 0px;
+}
+
+.LeftNavBar li{
+    color: whitesmoke;
+    text-align: center;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 10px 0px;
+    margin: 10px 10px 10px 0px;
+}
+
+.NotePage{
+    display: flex;
+}
+
+.RightNotePage{
+    height: 100vh;
+    width: 92vw;
+}
+
+.SearchFormNote{
+    display: flex;
+    padding: 25px;
+    gap: 10px;
+}
+
+.RightBottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.RightBottomRight{
+    height: 88vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.RightBottomRight img{
+    height: 70%;
+}
+
+.RightBottomRight p{
+    margin: 15px;
+    font-size: larger;
+    font-weight: 500;
+    max-width: 600px;
+    text-align: center;
+}
+
+.RightBottomRight button{
+    border-radius: 50%;
+}
+
+.RightBottomLeft{
+    height: 88vh;
+    width: 52vw;
+    background-color: rgba(203, 243, 255, 0.1);
+    border-radius: 50px;
+    margin-left: 25px;
+}
+
+.RightBottomLeft p{
+    text-align: center;
+    font-size: 2em;
+    margin: 10px 0px;
+}
+.NoteConatiner{
+    overflow-y: auto;
+    height: 100%;
+}
+
+.NoteComponent:last-child{
+    margin-bottom: 100px;
+}
+
+.NoteConatiner::-webkit-scrollbar{
+    display: none;
+}
+
+.NoteComponent{
+    background-color: rgba(233, 233, 233, 0.9);
+    display: flex;
+    flex-direction: column;
+    margin: 20px 30px;
+    border-radius: 25px;
+}
+
+.NoteComponent>p:nth-child(1){
+    font-size: large;
+    padding: 10px 0px;
+    border-bottom: 2px solid rgba(27, 27, 27, 0.5);
+}
+
+.NoteComponent p:nth-child(2){
+    font-size: medium;
+    text-align: left;
+    padding: 0px 20px;
+}
+
+.TodoComponent{
+    background-color: rgba(233, 233, 233, 0.9);
+    display: flex;
+    flex-direction: column;
+    margin: 20px 30px;
+    border-radius: 25px;
+    padding-bottom: 10px;
+}
+
+.TodoComponent p{
+    font-size: medium;
+}
+
+.TodoComponent:last-child{
+    margin-bottom: 100px;
+}
