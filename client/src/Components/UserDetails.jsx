@@ -4,15 +4,20 @@ import 'react-circular-progressbar/dist/styles.css';
 import React, { useEffect, useState } from 'react'
 import axios from "axios"
 import toast from "react-hot-toast"
+import { useNavigate } from "react-router-dom"
 
 export const UserDetails = () => {
 
+  const navigate = useNavigate();
   const [TotalTask, SetTotalTask] = useState(0);
   const [TotalTaskDone, SetTotalTaskDone] = useState(0);
   const [percent, SetPercent] = useState(0);
   const [Loading,SetLoading] = useState(false);
 
   useEffect(() => {
+    if (!localStorage.getItem("NoteWit")) {
+      navigate("/login")
+    }
     const getAllTask = async () => {
       var count = 0;
       SetLoading(true)
